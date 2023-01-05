@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		a,
+		input {
+			margin: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>This is page 2</h1>
+
+	back button : <input type="button"
+		value="Back" onclick="previousPage()"> <br>
+
+	forward button : <input type="button"
+		value="Forward" onclick="NextPage()"> <br>
+		
+	<script>
+		function NextPage() {
+			window.history.forward()
+		}
+		function previousPage() {
+			window.history.back();
+		}
+	</script>
+</body>
+
+</html>
